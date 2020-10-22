@@ -40,19 +40,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
         <style>
-            .albumcontainer {}
 
-            .albumcover {}
-
-            .albumtitle {}
-
-            .albumartist {}
-
-            .albumgenre {}
-
-            .albumduration {}
-
-            .music {}
         </style>
     </head>
 
@@ -92,16 +80,47 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     </ul>
                 </div>
             </nav>
-        </div>
 
+
+        </div>
+        <div>
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                        <a href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#favoriteAlbums">Favorites</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#albumReview">Album Review</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#worstAlbums">Hall of shame</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#admire">Best Artist</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#tapestry">Cover Gallery</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
         <!--Bio-->
-        <div class="container mt-5 d-flex  flex-column">
-            <h1 class="mx-auto">Welcome to my music Paradise</h1>
-            <p class="mx-auto">I'm a pround member of the beehive, so this page is dadicated to <strong>Queen
-                    B</strong><br> The one and only</p>
-            <h4 class="mx-auto">Beyoncé</h4><br>
-            <i>Hope you enjoy your time on my page...
-            </i>
+        <div class="container mt-5">
+
+            <div class="jumbotron jumbotron-fluid p-5">
+                <h1 class="display-4">Welcome to my music Paradise</h1>
+                <p class="lead">I'm a pround member of the beehive, so this page is dadicated to <strong>Queen
+                        B</strong><br> The one and only</p>
+                <h4 class="mx-5">Beyoncé</h4><br></p>
+                <hr class="my-4">
+                <i>Hope you enjoy your time on my page...
+                </i>
+            </div>
+
+
         </div>
 
 
@@ -125,7 +144,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-1">
                         <h5 class="card-title albumtitle">Lemonade</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> R&B </p>
+                        <p class="albumgenre badge badge-secondary"> R&B </p>
                         <p class="albumduration">45:42</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -142,7 +161,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-2">
                         <h5 class="card-title albumtitle">Everything is love</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> R&B </p>
+                        <p class="albumgenre badge badge-secondary"> R&B </p>
                         <p class="albumduration">41:45</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -159,7 +178,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-3">
                         <h5 class="card-title albumtitle">DANGEROUSLY IN LOVE (2003)</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> R&B </p>
+                        <p class="albumgenre badge badge-secondary"> R&B </p>
                         <p class="albumduration">45:42</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -176,7 +195,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-4">
                         <h5 class="card-title albumtitle">Homecoming</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> R&B </p>
+                        <p class="albumgenre badge badge-secondary"> R&B </p>
                         <p class="albumduration">108:57</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -193,7 +212,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-5">
                         <h5 class="card-title albumtitle">Beyoncé</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> Electro-R&B </p>
+                        <p class="albumgenre badge badge-secondary"> Electro-R&B </p>
                         <p class="albumduration">66:35</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -210,7 +229,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                     <div class="card-body collapse mb-5" id="album-6">
                         <h5 class="card-title albumtitle">The Lion King: The Gift</h5>
                         <p class="albumartist"> Beyoncé</p>
-                        <p class="albumgenre"> R&B Afrobeat Hip Hop</p>
+                        <p class="albumgenre badge badge-secondary"> R&B Afrobeat Hip Hop</p>
                         <p class="albumduration">54:00</p>
                         <audio controls alt="music sample" onplay="rotate(event)" onpause="stoprotate(event)">
                             <source
@@ -256,37 +275,117 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
                             <li><strong>Recorded</strong> June 2014 - July 2015</li>
                             <li><strong>Genre</strong> R&B ,art pop</li>
                             <li><strong>Length</strong> 45:42</li>
-                            <li><strong>Lable</strong>Parkwood, Columbia</li>
-                            <li><strong>Released</strong>April 23,2016</li>
+                            <li><strong>Lable</strong> Parkwood, Columbia</li>
+                            <li><strong>Released</strong> April 23,2016</li>
                         </ul>
                         <h6>Hold Up</h6>
                         <p> is one of my favorite songs from this album not only for it's vocals but also for the
                             amazing
-                            vesuals.</p>
+                            visuals.</p>
                         <iframe height="180px"
                             src="https://www.youtube.com/embed/PeonBmeFR8o?list=TLPQMjIxMDIwMjDH8-hBnrc4YQ"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="col-6 mb-3">
-                        <h5>Songs from Lemonade</h5>
-                        <ol>
-                            <li> Pray You Catch Me</li>
-                            <li> Hold Up</li>
-                            <li> Don't HUrt Yourself</li>
-                            <li> Sorry</li>
-                            <li> 6 Inch</li>
-                            <li> DAddy Lessons</li>
-                            <li> Love Drought</li>
-                            <li> Sandcastles</li>
-                            <li> Forward</li>
-                            <li> Freedom</li>
-                            <li> All night</li>
-                            <li> Formation</li>
-                        </ol>
+                    <div class="col-6 mb-3 container">
+
+                        <table class="table table-striped">
+                            <h5 class=" text-center">Songs from Lemonade</h5>
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Song Title</th>
+                                    <th scope="col">Lenght</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Pray You Catch Me</td>
+                                    <td> 3:15</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Hold Up</td>
+                                    <td> 3:14</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Don't Hurt Yourself</td>
+                                    <td>3:52</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Sorry</td>
+                                    <td>3:52</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>6 Inch</td>
+                                    <td>4:20</td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Daddy Lessons</td>
+                                    <td>4:27</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>Love Drought</td>
+                                    <td>3:57</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>Sandcastles</td>
+                                    <td>3:02</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>Forward</td>
+                                    <td>1:19</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>Freedom</td>
+                                    <td>4:49</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>All night</td>
+                                    <td>5:51</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>Formation</td>
+                                    <td>3:26</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td><strong>Total</strong></td>
+                                    <td><strong>45:42</strong></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
                     </div>
-                </div>
             </section>
         </div>
 
