@@ -28,13 +28,24 @@ body {
 
 .music {
 }
-div nav[aria-label="breadcrumb"] {
-  background-color: rgba(229, 233, 177);
+.breadcrumb {
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  display: absolute;
+  background-color: transparent;
+  z-index: 100;
 }
 .jumbotron {
   background-image: url(/image/Beyonce-The-Lion-King-Spirit-Music-Video-Fashion-Tom-Lorenzo-Site-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
 .display-4 {
   text-shadow: 0 0 4px violet;
@@ -60,7 +71,7 @@ i {
   font-family: "Libre Baskerville", serif;
 }
 h2 {
-  margin: auto;
+  text-align: center;
 }
 .navbar-brand,
 p + h4 {
@@ -102,10 +113,10 @@ body > div:first-child {
   transform: translateY(1px) 1s;
 }
 #favoriteAlbums .row .card img:first-of-type:hover {
-  box-shadow: 0 10px 25px #505050;
+  box-shadow: 0px -10px 30px #505050;
 }
 #favoriteAlbums .row .card:hover {
-  transform: translateY(4px);
+  transform: translateY(3px);
 }
 #favoriteAlbums .row .card a img:nth-child(2) {
   position: relative;
@@ -124,16 +135,82 @@ body > div:first-child {
   margin: 0;
 }
 .cancel-btn {
-  position: absolute;
   background-color: transparent;
-  color: #00ff84;
+  color: goldenrod;
   border: none;
   font-weight: 900;
   position: relative;
 }
 .cancel-btn:hover {
   color: red;
+  text-shadow: 0 0 15px gold;
+}
+.cancel-btn:active {
+  color: red;
   text-shadow: 0 0 15px #00ff84;
+}
+.loadoff {
+  animation: delete 1s ease-out;
+}
+@keyframes delete {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.btn.btn-secondary {
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  border: none;
+  padding: 15px 50px;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn.btn-secondary:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(47deg, #4158d0, #c850c0, #ffcc70);
+  background-size: 600% 600%;
+
+  -webkit-animation: gradient 8s ease infinite;
+  -moz-animation: gradient 8s ease infinite;
+  animation: gradient 8s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 2%;
+  }
+  50% {
+    background-position: 100% 99%;
+  }
+  100% {
+    background-position: 0% 2%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 2%;
+  }
+  50% {
+    background-position: 100% 99%;
+  }
+  100% {
+    background-position: 0% 2%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 2%;
+  }
+  50% {
+    background-position: 100% 99%;
+  }
+  100% {
+    background-position: 0% 2%;
+  }
 }
 #admire .square {
   position: relative;
@@ -218,19 +295,18 @@ body > div:first-child {
 footer {
   margin: auto;
 }
-footer a {
-  font-family: "Raleway", sans-serif;
-  font-size: 70px;
+footer a > i {
   display: inline;
+  font-family: "Raleway", sans-serif;
   color: #eee8aa;
   text-decoration: none;
   text-shadow: 0px 0px 5px rgb(210, 105, 30);
   margin: 70px;
 }
-footer a:hover {
-  color: black;
+footer a > i:hover {
+  color: #524426;
   text-shadow: 0px 0px 4px gold, 0px 0px 10px rgb(255, 165, 0);
 }
-footer a:active {
+footer a > i:active {
   color: rgb(252, 232, 246);
 }
