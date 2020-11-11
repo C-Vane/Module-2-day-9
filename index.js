@@ -94,6 +94,8 @@ const addTrack = () => {
 
         s = a % 60 < 10 ? "0" + (a % 60) : a % 60;
         destination[destination.length - 1].querySelectorAll("strong")[1].innerText = Math.floor(a / 60) + ":" + (a % 60);
+        clearForm();
+        alert("Thrack Number" + track_number + "has been added.");
       }
     }
   }
